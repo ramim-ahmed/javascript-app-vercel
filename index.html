@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Categories and Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-500 text-white py-4">
+      <h1 class="text-center text-2xl font-bold">Meal Categories & Details</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto my-6">
+      <!-- Meals Section -->
+      <section class="mt-8 grid grid-cols-12 gap-6">
+        <div class="col-span-4">
+          <h2 class="text-xl font-bold mb-4">Meals</h2>
+          <div id="meal-list" class="grid grid-cols-1 gap-4">
+            <!-- Meals will be rendered here -->
+          </div>
+        </div>
+        <!-- Meal Details Section -->
+        <section class="mt-8 hidden col-span-8" id="meal-details">
+          <!-- Full meal details will be rendered here -->
+        </section>
+      </section>
+
+      <!-- Categories Section -->
+      <section>
+        <h2 class="text-xl font-bold mb-4">Meal Categories</h2>
+        <div
+          id="meal-container"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+        >
+          <!-- Categories will be rendered here -->
+        </div>
+      </section>
+    </main>
+
+    <!-- App Script -->
+    <script src="/app/main.js"></script>
+  </body>
+</html>
